@@ -1,0 +1,33 @@
+{
+  "name": "ics",
+  "version": "1.0.0",
+  "description": "ICS",
+  "main": "index.js",
+  
+  "scripts": {
+    "start": "electron ."
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrwnv/ICS.git"
+  },
+
+  "author": "Andrew G.",
+  "license": "MIT",
+
+  "bugs": {
+    "url": "https://github.com/andrwnv/ICS/issues"
+  },
+
+  "dependencies": {
+    "zerorpc": "git+https://github.com/0rpc/zerorpc-node.git"
+  },
+
+  "devDependencies": {
+    "electron": "^1.7.6",
+    "electron-packager": "^9.0.1"
+  },
+
+  "homepage": "https://github.com/andrwnv/ICS#readme"
+}

@@ -1,8 +1,8 @@
-const electron      = require('electron');
+const electron       = require('electron');
 const browserWindow  = electron.BrowserWindow;
-const app           = electron.app;
+const app            = electron.app;
 
-const path          = require('path');
+const path           = require('path');
 
 let mainWindow = null;
 

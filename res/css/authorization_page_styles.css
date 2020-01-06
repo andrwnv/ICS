@@ -1,0 +1,108 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    
+    background: linear-gradient(179.79deg, #7140FF -87.71%, rgba(173, 135, 193, 0.04) 99.66%, rgba(234, 108, 255, 0) 99.68%), #252C42;
+ 
+    background-size:       cover;
+    background-repeat:     no-repeat;
+    background-position:   center;
+    background-attachment: fixed;
+}
+
+button
+{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+div#login_label
+{
+    font-size:   40px;
+    font-style:  normal;
+    font-weight: bold;
+
+    color: #FFFFFF;
+
+    margin-bottom: 45px;
+    user-select: none;
+}
+
+div#authorization_panel
+{
+    display: flex;
+    
+    flex-direction:  column;
+    justify-content: center;
+    
+    align-items: center;
+    text-align:  center;
+    min-height:  95vh;
+}
+
+button#login_button,
+input#username,
+input#password
+{
+    display: block;
+    margin:  0 auto;
+
+    outline:none;
+}
+
+input::placeholder
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+}
+
+input#username,
+input#password
+{
+    width: 400px;
+    height: 40px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+    padding-left: 20px;
+
+    margin-bottom: 20px;
+}
+
+input#username[type=text],
+input#password[type=password]
+{
+    color: white;
+    font-size: 17px;
+}
+
+button#login_button
+{
+    background: #A074FF;
+    border-radius: 30px;
+
+    width: 190px;
+    height: 40px;
+
+    color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    user-select: none;
+}
+
+button#login_button:hover
+{
+    background: #BD9EFF;
+
+    transition: 0.3s linear;
+    transform: scale(0.95);
+}
+
+button#login_button:not(:hover)
+{
+    transition: 1s;
+}

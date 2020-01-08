@@ -8,9 +8,5 @@ class IRpcNetworking():
         """ Run networking """
 
     @abstractmethod
-    def stop(self):
-        """ Stop networking """
-
-    @abstractmethod
     def bind(self, address: str):
         """ Bind address """

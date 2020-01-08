@@ -9,7 +9,7 @@ let mainWindow = null;
 const createWindow = () => {
     mainWindow = new browserWindow( { width: 1280, height: 720 } );
     mainWindow.loadURL( require('url').format({
-        pathname: path.join(__dirname, '/pages/authorization_page.html'),
+        pathname: path.join(__dirname, '/app/authorization_page.html'),
         protocol: 'file:',
         slashes: true
     }));

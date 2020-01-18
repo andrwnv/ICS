@@ -7,7 +7,7 @@ from zerorpc import Server
 
 class RpcNetworking(IRpcNetworking):
     """
-        Class to connect, disconect and recieve info from the server.
+        Class to connect, disconect and recieve info.
     """
 
     def __init__(self):

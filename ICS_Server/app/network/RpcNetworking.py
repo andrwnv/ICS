@@ -1,23 +1,22 @@
-from network.NetworkConfigurations import NetworkConfigurations
+from configuration.NetworkConfigurations import NetworkConfigurations
+from network.NetworkClientModel import NetworkClientModel
 from network.IRpcNetworking import IRpcNetworking
-from network.RpcMethods import RpcMethods
 
 from zerorpc import Server
 
 
 class RpcNetworking(IRpcNetworking):
     def __init__(self):
-        self.__rpc_server = Server(RpcMethods())
+        self.__rpc_server = Server(NetworkClientModel())
         self.__config = NetworkConfigurations()
-        self.__server_process = None
 
-    def run(self):
-        self.__bind()
-        self.__rpc_server.run()
-
-    def __bind(self): 
+    def bind(self, address: str) -> None:
+        self.__config.set_full_address(address)
         self.__rpc_server.bind(self.__config.get_full_address())
 
+    def run(self) -> None:
+        self.bind(self.__config.get_full_address())
+        self.__rpc_server.run()
 
-assert issubclass(RpcNetworking, IRpcNetworking)
-assert isinstance(RpcNetworking(), IRpcNetworking)
+    def stop(self) -> None:
+        self.__rpc_server.stop()

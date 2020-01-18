@@ -2,3 +2,4 @@ node_modules/
 .idea/
 __pycache__/
 package-lock.json
+ics_server.ini

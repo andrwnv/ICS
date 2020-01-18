@@ -1,4 +1,8 @@
 class IRpcNetworking:
+	"""
+		Class that describe interface for RPC networking.
+	"""
+    
     def run(self) -> None:
         """ Method that should implements starting RPC networking. """
         raise NotImplementedError

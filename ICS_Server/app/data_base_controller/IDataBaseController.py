@@ -1,4 +1,8 @@
 class IDataBaseController:
+    """
+        Class that describe interface for Data Base.
+    """
+
     def connect(self) -> bool:
         """ Method that should implements database connections. """
         raise NotImplementedError

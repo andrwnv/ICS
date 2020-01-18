@@ -4,6 +4,10 @@ import configparser
 
 
 class FileConfigurationManager(IConfigurable, object):
+    """
+        Class that implements saving parameters in ini file.
+    """
+
     def __new__(cls):
         if not hasattr(cls, '__instance'):
             cls.__config_file_path = 'ics_server.ini'

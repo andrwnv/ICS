@@ -1,12 +1,12 @@
-from abc import ABCMeta, abstractmethod, abstractproperty
+class IRpcNetworking:
+    def run(self) -> None:
+        """ Method that should implements starting RPC networking. """
+        raise NotImplementedError
 
-class IRpcNetworking():
-    __metaclass__ = ABCMeta
+    def stop(self) -> None:
+        """ Method that should implements the stop RPC networking. """
+        raise NotImplementedError
 
-    @abstractmethod
-    def run(self):
-        """ Run networking """
-
-    @abstractmethod
-    def bind(self, address: str):
-        """ Bind address """
+    def bind(self, address: str) -> None:
+        """ Method that should implements binding network address for RPC networking. """
+        raise NotImplementedError

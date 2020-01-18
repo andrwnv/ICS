@@ -2,7 +2,7 @@ from copy import deepcopy
 import sys
 
 
-class RpcMethods(object):
+class NetworkClientModel(object):
     def __init__(self):
         pass
 

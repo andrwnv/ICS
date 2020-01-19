@@ -1,16 +1,13 @@
-import {client} from 'global_variables';
+const globalController = require('/home/andrew/Desktop/ICS/app/js/global_controller');
 
-client.invoke('echo', 'server ready', (error, res) => {
-    if ( error || res !== 'server ready' )
-        console.error(error);
-    else
-        console.log(res);
+globalController.client.invoke('echo', 'server ready', (error, res, more) => {
+    console.log(res);
 });
 
-let btn = document.querySelector('#do_smth');
+let btn = document.querySelector('#login_button');
 
 btn.addEventListener('click', () => {
-    client.invoke('do_something', (error, res) => {
+    globalController.client.invoke('echo', 'do_something', (error, res, more) => {
         console.log(res);
     });
 });

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/purchase_sales_style.css" type="text/css">
+        <meta charset="UTF-8">
+        <title>ICS</title>
+    </head>
+
+    <body>
+        <div id="purchase_sales_panel">
+            <div id="menu_panel_column">
+                <label for="slide-menu-right" id="menu-button">≡</label>
+                <div id="slide-menu">
+                    <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+                    <div id="menu-wrap">
+                        <h1 id="menu-title">Menu</h1>
+                        <div id="menu-list">
+                            <ul id="menu_list_items">
+                                <li id="menu_list_item">
+                                    <a href="#" id="menu_list_item_link">Some HREF</a>
+                                </li>
+                                <li id="menu_list_item">
+                                    <a href="#" id="menu_list_item_link">Some HREF</a>
+                                </li>
+                                <li id="menu_list_item">
+                                    <a href="#" id="menu_list_item_link">Some HREF</a>
+                                </li>
+                                <li id="menu_list_item">
+                                    <a href="#" id="menu_list_item_link">Some HREF</a>
+                                </li>
+                                <li id="menu_list_item">
+                                    <a href="#" id="menu_list_item_link">Some HREF</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <label for="slide-menu-right" class="menu-overlay"></label>
+                </div>
+            </div>
+            
+            <div id="table_column">
+                <div id="goods_label">Goods</div>
+                <div id="table_column_box">
+                    <table id="goods_table">
+                        <tr id="goods_table_table_heading">
+                            <th id="goods_table_table_heading_head">Item ID</th>
+                            <th id="goods_table_table_heading_head">Item name</th>
+                            <th id="goods_table_table_heading_head">Number of items purchased</th>
+                            <th id="goods_table_table_heading_head">Сurrent number of items</th>
+                            <th id="goods_table_table_heading_head">Price of item</th>
+                            <th id="goods_table_table_heading_head">Price markupm</th>
+                            <th id="goods_table_table_heading_head">Full price</th>
+                        </tr>
+
+                        <tr>
+                            <td id="goods_table_table_item">34,5</td>
+                            <td id="goods_table_table_item">3,5</td>
+                            <td id="goods_table_table_item">36</td>
+                            <td id="goods_table_table_item">23</td>
+                            <td id="goods_table_table_item">36</td>
+                            <td id="goods_table_table_item">23</td>
+                            <td id="goods_table_table_item">23</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script src="./js/purchase_sales_controller.js"></script>
+</html>

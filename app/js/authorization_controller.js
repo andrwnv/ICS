@@ -1,8 +1,4 @@
-const rpc = require('zerorpc');
-
-let client = new rpc.Client();
-client.connect('tcp://127.0.0.1:4242');
-
+import {client} from 'global_variables';
 
 client.invoke('echo', 'server ready', (error, res) => {
     if ( error || res !== 'server ready' )

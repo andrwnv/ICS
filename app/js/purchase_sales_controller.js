@@ -1,31 +1,31 @@
-// const globalController = require('/home/andrew/Desktop/ICS/app/js/global_controller');
+let RPCNetworking = require('./js/rpc_networking');
 
-class GoodsTableController
-{
-    constructor()
+let network = new RPCNetworking();
+
+function GoodsTableController(){
+    this.table = document.getElementById('goods_table');
+    this._appendRows();
+}
+
+GoodsTableController.prototype._createCell = function(cell, text, style){
+    let tr = document.createElement('tr');                  
+    cell.innerHTML = text;       
+    cell.setAttribute('id', style);        
+}
+
+GoodsTableController.prototype._appendRows = function(){
+    let row = this.table.insertRow(this.table.rows.length);
+
+    for (var i = 0; i < this.table.rows[0].cells.length; i++) 
     {
-        // this.globalController = require('/home/andrew/Desktop/ICS/app/js/global_controller');
-        this.table = document.getElementById('goods_table');
-        this._appendRows();
+        this._createCell(row.insertCell(i), i, 'goods_table_table_item');
     }
+}
 
-    _createCell(cell, text, style) 
-    {
-        let tr = document.createElement('tr');                  
-        cell.innerHTML = text;       
-        cell.setAttribute('id', style);        
-    }
+GoodsTableController.prototype.updateData = function(){
+    network.invoke('update_goods', '', () => {
 
-    _appendRows()
-    {        
-        let row = this.table.insertRow(this.table.rows.length);
-
-        for (var i = 0; i < this.table.rows[0].cells.length; i++) 
-        {
-            this._createCell(row.insertCell(i), i, 'goods_table_table_item');
-        }
-    }
-
+    });
 }
 
 let table_controller = new GoodsTableController();

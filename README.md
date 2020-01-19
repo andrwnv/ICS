@@ -3,6 +3,7 @@
 Hi! Its ICS aka Industrial Control System. This project is a training.
 
 
-# Fast Start
+# Fast Start ICS Client
 
-    ./start.sh
+    $ npm install
+    $ npm start

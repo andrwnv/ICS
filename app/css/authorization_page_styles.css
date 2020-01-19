@@ -1,13 +1,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
-    
-    background: linear-gradient(179.79deg, #7140FF -87.71%, rgba(173, 135, 193, 0.04) 99.66%, rgba(234, 108, 255, 0) 99.68%), #252C42;
- 
-    background-size:       cover;
-    background-repeat:     no-repeat;
-    background-position:   center;
-    background-attachment: fixed;
+    background-color: #DFE0ED;
 }
 
 button
@@ -23,7 +17,7 @@ div#login_label
     font-style:  normal;
     font-weight: bold;
 
-    color: #FFFFFF;
+    color: #636475;
 
     margin-bottom: 45px;
     user-select: none;
@@ -53,7 +47,7 @@ input#password
 
 input::placeholder
 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(99, 100, 117, 0.8);
     font-size: 17px;
 }
 
@@ -63,40 +57,42 @@ input#password
     width: 400px;
     height: 40px;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #FFFFFF;
+    background: rgba(99, 100, 117, 0.12);
+    border: none;
     box-sizing: border-box;
     border-radius: 30px;
 
     padding-left: 20px;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 input#username[type=text],
 input#password[type=password]
 {
-    color: white;
+    color: #636475;
     font-size: 17px;
 }
 
 button#login_button
 {
-    background: #A074FF;
+    background: #8789A1;
     border-radius: 30px;
 
     width: 190px;
     height: 40px;
 
     color: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 
     user-select: none;
+
+    margin-top: 10px;
 }
 
 button#login_button:hover
 {
-    background: #BD9EFF;
+    background: #A3A5C2;
 
     transition: 0.3s linear;
     transform: scale(0.95);

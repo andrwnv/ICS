@@ -3,9 +3,9 @@ import sys
 
 
 class NetworkClientModel(object):
-	"""
-		Class that describe possible RPC interactions between server and client.
-	"""
+    """
+        Class that describe possible RPC interactions between server and client.
+    """
 
     def __init__(self):
         pass

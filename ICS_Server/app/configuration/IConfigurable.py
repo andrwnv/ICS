@@ -1,8 +1,7 @@
 class IConfigurable:
-	"""
-		Class that describe interface for configurable classes.
-	"""
-
+    """
+        Class that describe interface for configurable classes.
+    """
     def sync(self) -> None:
         """ Method that should implements saving current config params. """
         raise NotImplementedError

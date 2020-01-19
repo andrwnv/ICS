@@ -1,4 +1,4 @@
-const globalController = require('/home/andrew/Desktop/ICS/app/js/global_controller');
+const { RPCNetworking } = require('/home/andrew/Desktop/ICS/app/js/global_controller');
 
 globalController.client.invoke('echo', 'server ready', (error, res, more) => {
     console.log(res);

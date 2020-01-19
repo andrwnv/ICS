@@ -1,6 +1,43 @@
-const rpc = require('zerorpc');
+// const zeroRPC = require('zerorpc');
 
-var client = new rpc.Client();
-client.connect('tcp://127.0.0.1:4242');
+class RPCNetworking
+{
+    constructor(name = "")
+    {
+        if (!!RPCNetworking.instance)
+        {
+            return RPCNetworking.instance;
+        }
+        
+        RPCNetworking.instance = this;
+        
+        // this.client  = new zeroRPC.Client();
+        this.address = 'tcp://127.0.0.1:4242';
 
-module.exports.client = client;
+        this.name = name;
+
+        return this;
+    }
+
+    connect()
+    {
+        // this.client.connect(this.address);
+    }
+
+    disconnect()
+    {
+        // this.client.disconnect();
+    }
+
+    invoke(functionName, params, handler)
+    {
+        this.client.invoke(functionName, params, handler);
+    }
+}
+
+let rpc = new RPCNetworking("asdsd")
+
+module.exports.RPCNetworking = {
+    RPCNetworking
+}
+// module.exports.RPCNetworking = new RPCNetworking();

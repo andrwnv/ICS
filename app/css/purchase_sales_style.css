@@ -32,9 +32,7 @@ table#goods_table
 div#table_column
 {
     margin-top: 50px;
-    margin-left: 25px;
     margin-right: 25px;
-    /* margin: 50px; */
     flex: 95%;
 }
 
@@ -99,21 +97,25 @@ label#menu-button
     margin: 4px;
     padding: 7px 20px;
     color: #FFF;
-    background: #67B5D1;    
+    background: #C1C3E6;   
     padding: 10px 15px 10px 15px;
+    border: solid 2px #A3A5C2;
 
-
+    transition: 0.2s linear;
 }
 
 label#menu-button:hover 
 {
-    background: #3184A1;
+    border: solid 2px #C1C3E6;
+    background: #A3A5C2;
     cursor: pointer;
+
+    transition: 0.2s linear;
 }
 
 div#menu-wrap 
 {
-    background-color: #111;
+    background-color: #565766;
     padding: 40px 0;
     overflow: hidden;
     transition: all 0.3s;
@@ -123,6 +125,7 @@ div#menu-wrap
     left: -300px;
     bottom: 0;
     z-index: 999;
+    border-right: solid 2px #3A3B45;
 }
 .menu-overlay 
 {
@@ -205,7 +208,7 @@ div#menu-list li a
 
 div#menu-list li a:active 
 {
-    background: #666;
+    background: #C1C3E6;
 }
 
 ul#menu_list_items
@@ -226,5 +229,6 @@ a#menu_list_item_link
 
 a#menu_list_item_link:hover
 {
-    background: #67B5D1;    
+    transition: 0.2s linear;
+    background: #A3A5C2;    
 }

@@ -15,7 +15,7 @@ class FileConfigurationManager(IConfigurable, object):
 
             # init default params
             cls.__config['NETWORK'] = {
-                'Port': '4545',
+                'Port': '4242',
                 'Ip': 'tcp://127.0.0.1'
             }
 

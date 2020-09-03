@@ -21,7 +21,7 @@
     "zerorpc": "^0.9.8"
   },
   "devDependencies": {
-    "electron": "^1.8.8",
+    "electron": "^9.1.0",
     "electron-packager": "^9.1.0"
   },
   "homepage": "https://github.com/andrwnv/ICS#readme"
